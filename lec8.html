@@ -9,33 +9,55 @@
 <body>
     <h2>this is FORM tutorial</h2>
     <form action="backend.php">
+        <label for="name"> Name</label>
+        
         <div>
-            NAME:<input type="text" name="myName">
+           <input type="text" name="myName"id="name">
         </div>
         <br>
+        <label for="x"> ROLL</label>
         <div>
-            ROLL: <input type="text" name="myrole">
+             <input type="text" name="myrole" id="x">
         </div>
         <br>
+        <label for="y">Email</label>
         <div>
-            Email: <input type="email" name="myEmail" >
+         <input type="email" name="myEmail" id="y">
         </div>
         <br>
         <div>
             Date:  <input type="date">
         </div>
         <br>
+        <label for="checkbox">are you eligible</label>
+        <div>
+
+         <input type="checkbox" name="my eligibility"checked id="checkbox">
+        </div>
+        <br>
         <div>
             bonus: <input type="number">
         </div>
         <br>
-        Gender:male <input type="radio" name="my gender"> female <input type="radio" name="my gender"> other <input type="radio" name="my gender">
+        Gender  :  male <input type="radio" name="my gender"> female <input type="radio" name="my gender"> other <input type="radio" name="my gender">
         <div>
             <input type="submit" value="Submit Now">
         </div>
         <br>
         <div>
+        <label for="car"> CAR</label>
+        <select name="mycar" id="car">
+            <option value="indica" selected>Indica</option>
+            <option value="wagnor"> wagnor</option>
+            <option value="swift"> Swift</option>
+        </select>
+        </div>
+        <br>
+        <div>
             <input type="reset" value="Reset Now">
+        </div>
+        <div>
+            write about your self: <br> <textarea name="my text" cols="90" rows="10"></textarea>
         </div>
     </form>
 </body>
